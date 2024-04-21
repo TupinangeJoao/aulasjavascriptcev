@@ -1,0 +1,181 @@
+Operadores Artméticos:
+
+Eles são: +, -, *, /, % e **
+
+5 + 2 = 7 // Soma
+5 - 2 = 3 // Subtração
+5 * 2 = 10 // Multiplicação
+5 / 2 = // Divisão
+5 % 2 = 1 // Resto
+5 ** 2 = 10 // Potência (ou seja 5² = 10)
+
+Precedência de regras:
+ordem:
+( ) tudo dentro dos parenteses, é prioridade
+** Potência em seguida
+* / % a Ordem segue a mesma prioridade, começando da esquerda pra direita
++ - por fim, os Operadores mais simples
+
+exemplos:
+
+> var a = 5 + 3 // ou seja a = 8
+undefined
+> var b = a % 5
+undefined
+> b
+3
+> var c = 5*b**2
+undefined
+> c
+45
+> var d = 10 - a/2
+undefined
+> d
+6
+> var e = 6*2/d
+undefined
+> e
+2
+> var f = b%e+4/e
+undefined
+> f
+3
+>
+>
+> var n = 3
+undefined
+> n = n+4
+7
+>
+o Operador pode substituir quando usado ele mesmo por uma forma simplificada
+EX:
+
+var n = 1
+n += 1
+n = 2
+
+Isso também serve para outros Operadores
+
+
+---------------------------------
+
+Operadores Relacionais
+
+> maior que
+< menor que
+>= maior ou igual
+<= menor ou igual
+== igual
+!= diferente
+
+o resultado sempre será booleano, ou seja true ou false
+
+ex:
+
+> 5>2
+true
+> 8<4
+false
+> var a = 8
+undefined
+> var b = 15
+undefined
+> a > b
+false
+> a < b
+true
+> a <= b
+true
+
+> a <= b - 10 // nesse caso, o operador aritmetico, tem maior ordem na precedencia.
+false
+> a == b
+false
+> a != b
+true
+
+> 5 == 5 // nesse caso, ambos são number.
+true
+> 5 == '5' // nesse caso, mesmo sendo um number e um string, o valor real é equivalente
+true
+> 5 === '5' // nesse caso o '===' é um operador de identidade, que é "um operador de identidade restrita", e declara divergente as informações devido ao tipo.
+false
+> 5 != 5
+false
+> 5 !== '5' // nesse caso o '!==', que é um operador chamado de "desigual restrito", o tipo diferente declara diferente, independente do tipo
+true
+
+-------------------------------------------------
+
+Operadores Lógicos
+
+! Negação  // ex: Eu quero um caneta vermelha, só NÃO quero azul. Ele vai declarar o que ele não deseja e dar true se recebido da formaa correta
+
+&& Conjunção // ex: Eu quero uma caneta azul e uma caneta vermelha. tem que atender a todos os critérios, se faltar algo, ele não aceita e retona false.
+
+|| Disjunção // ex:  Eu quero uma azul ou uma vermelha. ele aceita apenas um e já aceita true. só da false se não tiver o que ele deseja.
+
+exemplos:
+
+> var a = 5
+undefined
+> var b = 8
+undefined
+> true && false
+false
+> true && true
+true
+> a > b && b % 2 == 0 // a precedencia será Aritmeticos, depois relacionais, e por ultimo, lógicos
+false
+> a <= b || b / 2 == 2 // nesse caso, dá true, porque o resultado precisaria ser um ou outro
+true
+> // a ordem dos operadores logicos será sempre ! (negação), && (conjunção) e depois || (disjunção), ou falando simplificadamente, NÂO, E, OU.
+undefined
+> //mais exemplos:
+
+idade >= 15 && idade <=17 // a idade está entre 15 e 17?
+estado == 'RJ' || estado == 'SP' // o Estado é RJ ou SP?
+salário > 1500 && sexo != 'M' // Salario é acima de R$ 1500 e o Sexo é diferente de Masculino.
+
+precedencia
+
+() ** / ... // Aritmeticos
+> < <= ... // Relacionais, não importa a ordem, segue-se sa esquerda pra direita.
+! && || // Lógicos, Não, E e OU
+? : //  o Operador Ternário é sempre o ultimo, ele retorna o valor atribuido.
+
+
+Operador Ternário
+
+?
+:
+
+ex:
+
+teste ? true : true
+
+> var media = 5.5
+undefined
+> media > 7?'APROVADO':'REPROVADO'
+'REPROVADO'
+> media += 3
+8.5
+> media > 7?'APROVADO':'REPROVADO'
+'APROVADO'
+>
+> // outro exemplo
+undefined
+> var x = 8
+undefined
+> var res = x % 2 == 0 ?  5 : 9
+undefined
+> x
+8
+> res
+5
+> var idade = 19
+undefined
+> var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+undefined
+> r
+'MAIOR'

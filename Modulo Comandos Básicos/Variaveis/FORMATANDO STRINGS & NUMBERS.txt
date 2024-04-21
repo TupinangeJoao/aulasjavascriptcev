@@ -1,0 +1,36 @@
+> var nome = 'Tupi'
+undefined
+> var idade = 33
+undefined
+> var nota = 8.5
+undefined
+> 'O Aluno ' + nome + ' com ' + idade + ' anos, tirou a nota: ' + nota
+'O Aluno Tupi com 33 anos, tirou a nota: 8.5'
+
+// PARA FACILITAR A FORMATAÇÃO DA STRING
+
+> ` O Aluno ${name} com ${idade} anos, tirou a nota ${nota}`
+' O Aluno Tupi com 33 anos, tirou a nota 8.5'
+
+// O USO DA CRASE `, SOMADO AO USO DO ${x} TORNA POSSIVEL CONCATENAR DE FORMA MAIS SIMPLES AS INFORMAÇÕES.
+
+// s.length - informa quantos caracteres a string possui
+// s.toUpperCase() - muda tudo para 'MAIÚSCULAS'
+// s.toLowerCase() - muda tudo para 'minúsculas'
+
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2) // ALTERA O VALOR DECIMAL PARA DUAS OU MAIS CASAS
+'1545.50'
+> n1.toFixed(2).replace('.',',') // ALTERA O PONTO NA CASA DECIMAL POR VIRGULA
+'1545,50'
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // ALTERA PARA A MOEDA LOCAL INFORMADA
+'R$ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+'US$ 1.545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+'€ 1.545,50'
+>

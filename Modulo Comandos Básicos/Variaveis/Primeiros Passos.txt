@@ -1,0 +1,26 @@
+// PARA ENTREGADOR ---- R$ 1,15 por km, dentro da região metropolitana do Recife (Toda)
+// PARA CLIENTE ---- Seguir a tabela;
+
+// Cria comentarios em JS de uma unica linha
+/* */ Cria um comentário em JS com várias linhas
+
+-var- Cria uma variavel, cada dado atribuido a uma variavel é chamado de identificador
+-let- Também cria variaveis
+	regra: podem começar com letra, $ ou _
+	não podem começar com némeros
+	pode usar letras e números
+	é possivel usar acentos e simbolos
+	não pode usar palavras reservadas para a linguagem como por exemplo a palavra "var"
+
+-string- É o termo utilizado para criar uma variavel de texto. 
+	O que define uma String é o uso da aspas duplas " ". 
+	Podendo usar também a aspa simples ' ', ou a crase ` `.
+
+Letras maiúsculas e minúsculas fazem diferença
+	foque em escolhe nomes coerentes com a função para qual a variável foi alocada.
+
+-number- são variáveis numerícas
+-boolean- são variáveis que determinam false or true
+
+-typeof- informa o tipo da variável
+	typeof é um operador!
