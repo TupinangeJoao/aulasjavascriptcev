@@ -9,7 +9,7 @@ undefined
 
 // PARA FACILITAR A FORMATAÇÃO DA STRING
 
-> ` O Aluno ${name} com ${idade} anos, tirou a nota ${nota}`
+> ` O Aluno ${name} com ${idade} anos, tirou a nota ${nota}` // usar a crase (acento agudo, invertido)
 ' O Aluno Tupi com 33 anos, tirou a nota 8.5'
 
 // O USO DA CRASE `, SOMADO AO USO DO ${x} TORNA POSSIVEL CONCATENAR DE FORMA MAIS SIMPLES AS INFORMAÇÕES.
