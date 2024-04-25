@@ -20,11 +20,11 @@ exemplos:
 
 > var a = 5 + 3 // ou seja a = 8
 undefined
-> var b = a % 5
+> var b = a % 5 // ou seja b = 3
 undefined
 > b
 3
-> var c = 5*b**2
+> var c = 5*b**2 // ou seja c = 45 (ordem de precedencia)
 undefined
 > c
 45
@@ -140,7 +140,7 @@ salário > 1500 && sexo != 'M' // Salario é acima de R$ 1500 e o Sexo é difere
 precedencia
 
 () ** / ... // Aritmeticos
-> < <= ... // Relacionais, não importa a ordem, segue-se sa esquerda pra direita.
+> < <= ... // Relacionais, não importa a ordem, segue-se da esquerda pra direita.
 ! && || // Lógicos, Não, E e OU
 ? : //  o Operador Ternário é sempre o ultimo, ele retorna o valor atribuido.
 
