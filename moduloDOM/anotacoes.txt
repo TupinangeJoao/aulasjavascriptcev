@@ -1,0 +1,36 @@
+DOM = Document Object Model
+
+Arvore DOM
+
+os Objetos acima sao os *Parent* (seria o equivalente a 'pais')
+os abaixo sao considerados *Child* (seria os equivalente a 'filhos')
+
+exemplos do site do exe005.
+ 
+document > html, ou seja, document é Parent de html.
+html > body, ou seja, body é Child de html.
+
+
+            Window
+          /    |    \
+    locaton document history
+               |
+             html
+             /  \
+         head   body
+       / |     / / | \
+   meta title / /  |  \
+             / /   |   \
+            h1 p   p    div
+                   |
+                strong
+
+Vc pode acessar os elementos de toda a Arvore.
+
+Alguns exemplos do que podemos selecionar, abaixo:
+
+por Marca (tag) // [getElementsByTagName()]
+por ID (#) // [getElementsById()]
+por Nome // [getElementsByName()]
+por Classe // (class)  [getElementsByClassName()]
+por Seletor // (css) [querySelector()] || [querySelectorAll()]

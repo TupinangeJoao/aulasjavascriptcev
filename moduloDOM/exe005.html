@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o DOM</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font: normal 1.5em arial;
+        }
+
+        .fim {
+            margin: 0;
+            background-color: yellow;
+            font-size: small;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="msg">Usando o DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a Usar o <strong>DOM</strong> em <strong>EcmaScript!</strong></p>
+    <div class="cls">Clique em mim</div>
+    <br>
+    <p class="fim">. fim do html </p>
+    <br>
+    <script>
+        var corpo = document.body // selecionando o body
+        corpo.style.background = 'black' // alterando a cor do body
+        var p1 = document.getElementsByTagName('p')[0] // selecionando o primeiro paragrafo, inicindo com 0.
+        document.write('Esta escrito assim no p1: ' + p1.innerText + '<br>')
+        var p2 = document.getElementsByTagName('p')[1]
+        alert('Esse texto segue do p2: ' + p2.innerText)
+        var h = document.getElementById('msg') // selecionando por id
+        document.write('<br> O texto do h1: ' + h.innerHTML + '<br>')
+        var d = document.querySelector('div.cls') // selecionando pela div usando o css
+        document.write('<br> Texto representado na Classe Div: ' + d.innerHTML + '<br>')
+    </script>
+</body>
+</html>
