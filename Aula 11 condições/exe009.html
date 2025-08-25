@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de País</title>
+    <style>
+        input{
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de País</h1>
+    <input style="text-align: center;" type="text" id="pais" placeholder="Digite seu país">
+    <input type="button" value="Verificar" onclick="Verifique()">
+    <h2>Verifique se você pode se inscrever no curso</h2>'
+    <div id="txt"></div>
+<script>
+    function Verifique() {
+        var pais = 'Brasil'
+        var teste = document.getElementById('pais')
+        var txt = document.getElementById('txt')
+
+    if  (teste.value == 'Brasil' || teste.value == 'brasil'){
+    txt.innerHTML = 'Você é brasileiro, você pode se inscrever'
+    }   else {
+        txt.innerHTML = 'Você infelizmente não pode se inscrever neste curso!'
+    }}
+    
+    
+</script>
+
+</body>
+</html>
+
+
